@@ -1,6 +1,32 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
+@import './variables.css';
 
 @theme {
+  --font-sans: 'Reddit Sans', sans-serif;
 
+  /* Font size */
+  --text-xxs: var(--fz-xxs);
+  --text-xs: var(--fz-xs);
+  --text-sm: var(--fz-sm);
+  --text-md: var(--fz-md);
+  --text-lg: var(--fz-lg);
+  --text-xl: var(--fz-xl);
+  --text-2xl: var(--fz-2xl);
+  --text-3xl: var(--fz-3xl);
+
+  /* Colors */
+  --color-primary: var(--brand-800);
+  --color-secondary: var(--brand-500);
+
+  /* Surface */
+  --color-surface-container-primary: var(--ink-50);
+
+  /* Radius */
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
 }

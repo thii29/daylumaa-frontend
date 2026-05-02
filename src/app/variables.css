@@ -1,22 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 :root {
   /* Font size */
-  --fz-xxs: 8;
-  --fz-xs: 10;
-  --fz-sm: 12;
-  --fz-md: 16;
-  --fz-lg: 20;
-  --fz-xl: 24;
-  --fz-2xl: 28;
-  --fz-3xl: 32;
-
-  /* Font weight */
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
+  --fz-xxs: 8px;
+  --fz-xs: 10px;
+  --fz-sm: 12px;
+  --fz-md: 16px;
+  --fz-lg: 20px;
+  --fz-xl: 24px;
+  --fz-2xl: 28px;
+  --fz-3xl: 32px;
 
   /* Colors */
   /* Brand - sage green */
@@ -56,13 +49,13 @@
   --red-2: #fef0f0;
 
   /* Radius */
-  --radius-xs: 6;
-  --radius-sm: 8;
-  --radius-md: 10;
-  --radius-lg: 12;
-  --radius-xl: 16;
-  --radius-2xl: 20;
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
 
   /* Shadows */
-  
+
 }
