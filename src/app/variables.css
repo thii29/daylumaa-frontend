@@ -1,5 +1,3 @@
-
-
 :root {
   /* Font size */
   --fz-xxs: 8px;
@@ -37,12 +35,8 @@
   --ink-25: #f5f6fa;
 
   /* Accent */
-  --blue-1: #5b8db8;
-  --blue-2: #ebf2fa;
   --amber-1: #e09e5b;
   --amber-2: #fef5eb;
-  --rose-1: #c97bab;
-  --rose-2: #f8eff6;
   --teal-1: #6ba8b0;
   --teal-2: #ebf5f7;
   --red-1: #e05b5b;
@@ -55,7 +49,5 @@
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-2xl: 20px;
-
-  /* Shadows */
 
 }

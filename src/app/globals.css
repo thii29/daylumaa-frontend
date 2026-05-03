@@ -3,7 +3,7 @@
 @import './variables.css';
 
 @theme {
-  --font-sans: 'Reddit Sans', sans-serif;
+  --font-sans: 'Inter', sans-serif;
 
   /* Font size */
   --text-xxs: var(--fz-xxs);
@@ -16,11 +16,20 @@
   --text-3xl: var(--fz-3xl);
 
   /* Colors */
-  --color-primary: var(--brand-800);
-  --color-secondary: var(--brand-500);
+  --color-primary: var(--brand-600);
+  --color-secondary: var(--brand-300);
 
-  /* Surface */
-  --color-surface-container-primary: var(--ink-50);
+  /* Color - Surface */
+  --color-surface-container-primary: var(--ink-100);
+  --color-surface-box: var(--ink-25);
+
+  /* Color - Variant */
+  --color-success-1: var(--teal-1);
+  --color-success-2: var(--teal-2);
+  --color-warning-1: var(--amber-1);
+  --color-warning-2: var(--amber-2);
+  --color-error-1: var(--red-1);
+  --color-error-2: var(--red-2);
 
   /* Radius */
   --radius-xs: var(--radius-xs);
