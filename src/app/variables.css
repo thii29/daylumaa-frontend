@@ -1,14 +1,4 @@
 :root {
-  /* Font size */
-  --fz-xxs: 8px;
-  --fz-xs: 10px;
-  --fz-sm: 12px;
-  --fz-md: 16px;
-  --fz-lg: 20px;
-  --fz-xl: 24px;
-  --fz-2xl: 28px;
-  --fz-3xl: 32px;
-
   /* Colors */
   /* Brand - sage green */
   --brand-900: #2d5240;

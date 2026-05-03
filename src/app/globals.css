@@ -5,16 +5,6 @@
 @theme {
   --font-sans: 'Inter', sans-serif;
 
-  /* Font size */
-  --text-xxs: var(--fz-xxs);
-  --text-xs: var(--fz-xs);
-  --text-sm: var(--fz-sm);
-  --text-md: var(--fz-md);
-  --text-lg: var(--fz-lg);
-  --text-xl: var(--fz-xl);
-  --text-2xl: var(--fz-2xl);
-  --text-3xl: var(--fz-3xl);
-
   /* Colors */
   --color-primary: var(--brand-600);
   --color-secondary: var(--brand-300);
@@ -30,6 +20,10 @@
   --color-warning-2: var(--amber-2);
   --color-error-1: var(--red-1);
   --color-error-2: var(--red-2);
+
+  /* Color - Text */
+  --color-ink-900: var(--ink-900);
+  --color-ink-400: var(--ink-400);
 
   /* Radius */
   --radius-xs: var(--radius-xs);
