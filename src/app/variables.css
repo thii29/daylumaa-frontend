@@ -40,4 +40,25 @@
   --radius-xl: 16px;
   --radius-2xl: 20px;
 
+  --grid: 4px;
+
+  /* Font sizes */
+  --fs-xs: 0.75rem; /* 12px */
+  --fs-sm: 0.875rem; /* 14px */
+  --fs-md: 1rem; /* 16px */
+  --fs-lg: 1.125rem; /* 18px */
+  --fs-xl: 1.25rem; /* 20px */
+  --fs-2xl: 1.5rem; /* 24px */
+  --fs-3xl: 2rem; /* 32px */
+  --fs-4xl: 2.5rem; /* 40px */
+
+  /* Line heights — locked to 4px grid & matches icon sizes */
+  --lh-xs: 16px; /* 4 × 4  — icon-xs  */
+  --lh-sm: 20px; /* 5 × 4  — icon-sm  */
+  --lh-md: 24px; /* 6 × 4  — icon-md ✦ */
+  --lh-lg: 28px; /* 7 × 4             */
+  --lh-xl: 28px; /* 7 × 4             */
+  --lh-2xl: 32px; /* 8 × 4             */
+  --lh-3xl: 40px; /* 10 × 4 — icon-lg ✦ */
+  --lh-4xl: 48px; /* 12 × 4 — icon-xl ✦ */
 }

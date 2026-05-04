@@ -33,3 +33,63 @@
   --radius-xl: var(--radius-xl);
   --radius-2xl: var(--radius-2xl);
 }
+@layer typography {
+
+  /* ── Body ──────────────────────────────────── */
+  .text-caption {                  /* label, hint       */
+    font-size:   var(--fs-xs);     /* 12px              */
+    line-height: var(--lh-xs);     /* 16px  ← icon-xs   */
+    font-weight: 400;
+    color: var(--color-ink-400);
+  }
+
+  .text-body-sm {                  /* secondary text    */
+    font-size:   var(--fs-sm);     /* 14px              */
+    line-height: var(--lh-sm);     /* 20px  ← icon-sm   */
+    font-weight: 400;
+    color: var(--color-ink-400);
+  }
+
+  .text-body {                     /* default body      */
+    font-size:   var(--fs-md);     /* 16px              */
+    line-height: var(--lh-md);     /* 24px  ← icon-md ✦ */
+    font-weight: 400;
+    color: var(--color-ink-900);
+  }
+
+  .text-body-lg {
+    font-size:   var(--fs-lg);     /* 18px              */
+    line-height: var(--lh-lg);     /* 28px              */
+    font-weight: 400;
+    color: var(--color-ink-900);
+  }
+
+  /* ── Headings ──────────────────────────────── */
+  .text-header-3 {
+    font-size:   var(--fs-xl);     /* 20px              */
+    line-height: var(--lh-xl);     /* 28px              */
+    font-weight: 600;
+    color: var(--color-ink-900);
+  }
+
+  .text-header-2 {
+    font-size:   var(--fs-2xl);    /* 24px              */
+    line-height: var(--lh-2xl);    /* 32px              */
+    font-weight: 600;
+    color: var(--color-ink-900);
+  }
+
+  .text-header-1 {
+    font-size:   var(--fs-3xl);    /* 32px              */
+    line-height: var(--lh-3xl);    /* 40px  ← icon-lg ✦ */
+    font-weight: 700;
+    color: var(--color-ink-900);
+  }
+
+  .text-display {
+    font-size:   var(--fs-4xl);    /* 40px              */
+    line-height: var(--lh-4xl);    /* 48px  ← icon-xl ✦ */
+    font-weight: 700;
+    color: var(--color-ink-900);
+  }
+}

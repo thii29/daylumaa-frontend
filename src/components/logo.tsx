@@ -6,15 +6,17 @@ type Props = {
   strokeWidth?: number;
 };
 
-const Logo = ({ size = 18, color = "#FFFFFF", strokeWidth }: Props) => {
+const Logo = ({ size = 20, color = '#FFFFFF', strokeWidth }: Props) => {
   return (
-    <div className="h-9 flex items-center gap-2">
-      <div className="w-9 h-full flex justify-center items-center rounded-md bg-primary shadow-sm">
+    <div className="w-full h-12 flex items-center gap-2 py-1">
+      <div className="w-10 h-full flex justify-center items-center rounded-md bg-primary shadow-sm">
         <Sparkles size={size} color={color} strokeWidth={strokeWidth} />
       </div>
-      <div className='h-full py-0.5 flex flex-col justify-between'>
-        <div className='text-lg font-bold leading-4.5 text-ink-900'>Daylumaa</div>
-        <div className='text-xs leading-3 font-light text-ink-400'>Productivity Hub</div>
+      <div
+        className="h-fit py-1 flex flex-col flex-1"
+      >
+        <div className="text-header-3">Daylumaa</div>
+        <div className="text-caption">Productivity Hub</div>
       </div>
     </div>
   );

@@ -1,10 +1,15 @@
 
-type Props = {}
+type Props = {
+  label?: string;
+}
 
-const input = (props: Props) => {
+const Input = (props: Props) => {
   return (
-    <div>input</div>
+    <div className="flex flex-col gap-0.5">
+      <label htmlFor=""></label>
+      <input type="text" />
+    </div>
   )
 }
 
-export default input
+export default Input
