@@ -43,6 +43,7 @@
   --grid: 4px;
 
   /* Font sizes */
+  --fs-2xs: 0.625rem; /* 10px */
   --fs-xs: 0.75rem; /* 12px */
   --fs-sm: 0.875rem; /* 14px */
   --fs-md: 1rem; /* 16px */
@@ -53,6 +54,7 @@
   --fs-4xl: 2.5rem; /* 40px */
 
   /* Line heights — locked to 4px grid & matches icon sizes */
+  --lh-2xs: 12px; /* 3 × 4 */
   --lh-xs: 16px; /* 4 × 4  — icon-xs  */
   --lh-sm: 20px; /* 5 × 4  — icon-sm  */
   --lh-md: 24px; /* 6 × 4  — icon-md ✦ */

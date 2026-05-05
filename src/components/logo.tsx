@@ -9,7 +9,7 @@ type Props = {
 const Logo = ({ size = 20, color = '#FFFFFF', strokeWidth }: Props) => {
   return (
     <div className="w-full h-12 flex items-center gap-2 py-1">
-      <div className="w-10 h-full flex justify-center items-center rounded-md bg-primary shadow-sm">
+      <div className="w-10 h-full flex justify-center items-center rounded-md bg-primary-main shadow-sm">
         <Sparkles size={size} color={color} strokeWidth={strokeWidth} />
       </div>
       <div
