@@ -16,14 +16,14 @@ const InputForm = ({ ...props }: Props) => {
     : props.type;
 
   return (
-    <div className="flex flex-col gap-0.5">
+    <div className="flex flex-col gap-1">
       <label htmlFor="" className="text-body-sm">
         {props.label}:
       </label>
       <div className="relative">
         <input
           type={inputType}
-          className={`w-full px-2.5 py-1 outline outline-ink-300 rounded-xs text-body-sm
+          className={`w-full px-2.5 py-2 outline outline-ink-300 rounded-xs text-body-sm
             hover:outline-2 hover:outline-ink-400 focus:outline-1 focus:outline-primary-500
             ${isPassword ? 'pr-8' : ''}`}
         />
