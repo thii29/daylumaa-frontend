@@ -15,7 +15,7 @@ const Logo = ({ size = 20, color = '#FFFFFF', strokeWidth }: Props) => {
       <div
         className="h-fit py-1 flex flex-col flex-1"
       >
-        <div className="text-header-3">Daylumaa</div>
+        <div className="text-header-3 font-bold">Daylumaa</div>
         <div className="text-caption">Productivity Hub</div>
       </div>
     </div>
