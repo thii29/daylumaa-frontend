@@ -1,6 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
- export interface SideNavItem {
+export interface SideNavItem {
   icon: ReactNode;
   title: string;
- }
+  href: string;
+}

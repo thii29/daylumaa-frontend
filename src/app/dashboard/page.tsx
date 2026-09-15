@@ -1,12 +1,10 @@
-import SideNav from '@/components/sidenav';
+import Layout from '@/components/layout';
 
-type Props = {};
-
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
   return (
-    <div className="flex justify-between w-full h-screen bg-ink-25">
-      <SideNav></SideNav>
-    </div>
+    <Layout>
+      <h1 className="text-header-1 font-semibold">Dashboard</h1>
+    </Layout>
   );
 };
 
