@@ -30,8 +30,9 @@ type CalendarProps = {
 };
 
 const MiniCalendar = ({ value, onChange }: CalendarProps) => {
-  const [viewDate, setViewDate] = useState(() => value ?? new Date());
-  const [selected, setSelected] = useState<Date | null>(value ?? null);
+  const today = useMemo(() => new Date(), []);
+  const [viewDate, setViewDate] = useState(() => value ?? today);
+  const [selected, setSelected] = useState<Date>(value ?? today);
 
   const days = useMemo(() => getCalendarDays(viewDate), [viewDate]);
 
@@ -72,15 +73,18 @@ const MiniCalendar = ({ value, onChange }: CalendarProps) => {
       </div>
       {/* Weekday header & Date */}
       <div className="flex flex-col text-center text-caption mt-8">
-        <div className="grid grid-cols-7 ">
+        <div className="grid grid-cols-7 gap-2">
           {WEEKDAYS.map((day, i) => (
-            <span key={day}>{day}</span>
+            <span key={day} className={i >= 5 ? 'text-primary-700' : ''}>
+              {day}
+            </span>
           ))}
         </div>
-        <div className="grid grid-cols-7">
+        <div className="grid grid-cols-7 mt-2 gap-2">
           {days.map((date, i) => {
             const inMonth = date.getMonth() === viewDate.getMonth();
             const isWeekend = i % 7 >= 5;
+            const isToday = isSameDay(date, today);
             const isSelected = selected !== null && isSameDay(date, selected);
 
             return (
@@ -97,6 +101,10 @@ const MiniCalendar = ({ value, onChange }: CalendarProps) => {
                       : isWeekend
                         ? 'text-primary-700'
                         : 'text-ink-700',
+                  !inMonth && !isSelected ? 'opacity-35' : '',
+                  isToday && !isSelected
+                    ? 'ring-1 ring-inset ring-primary-700'
+                    : '',
                 ].join(' ')}
               >
                 {date.getDate()}
