@@ -2,7 +2,7 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
-const WEEKDAYS = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 const isSameDay = (a: Date, b: Date) =>
   a.getFullYear() === b.getFullYear() &&
@@ -59,21 +59,21 @@ const MiniCalendar = ({ value, onChange }: CalendarProps) => {
           aria-label="Previous month"
           className="cursor-pointer"
         >
-          <ChevronLeft />
+          <ChevronLeft size={16} />
         </button>
-        <span>{titleMonth}</span>
+        <span className='text-body font-semibold'>{titleMonth}</span>
         <button
           type="button"
           onClick={() => goToMonth(1)}
           aria-label="Next month"
           className="cursor-pointer"
         >
-          <ChevronRight />
+          <ChevronRight size={16} />
         </button>
       </div>
       {/* Weekday header & Date */}
-      <div className="flex flex-col text-center text-caption mt-8">
-        <div className="grid grid-cols-7 gap-2">
+      <div className="flex flex-col text-center text-body-sm mt-4">
+        <div className="grid grid-cols-7 gap-2 font-semibold">
           {WEEKDAYS.map((day, i) => (
             <span key={day} className={i >= 5 ? 'text-primary-700' : ''}>
               {day}
