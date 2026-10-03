@@ -8,7 +8,7 @@ const Layout = ({ children }: Props) => {
   return (
     <div className="flex min-h-screen w-full bg-ink-25">
       <SideNav />
-      <main className="flex-1 p-8">{children}</main>
+      <main className="flex-1 p-6">{children}</main>
     </div>
   );
 };

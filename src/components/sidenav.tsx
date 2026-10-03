@@ -5,6 +5,7 @@ import { LayoutDashboard, ListTodo, Wallet } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from './logo';
+import { Avatar, AvatarFallback, AvatarImage } from './avatar';
 
 const SideNav = () => {
   const pathname = usePathname();
@@ -26,7 +27,7 @@ const SideNav = () => {
     },
   ];
   return (
-    <div className="w-54 bg-white flex flex-col gap-7 px-2 py-3">
+    <div className="w-fit bg-white flex flex-col gap-7 px-3 py-3">
       <Logo />
       <div className="w-full flex flex-col flex-1 gap-3">
         <span className="text-body-sm font-semibold text-ink-400">Main Menu</span>
@@ -39,7 +40,7 @@ const SideNav = () => {
                 key={item.href}
                 href={item.href}
                 aria-current={isActive ? 'page' : undefined}
-                className={`flex items-center gap-2 px-2 py-2 w-full rounded-xs text-body font-medium transition-colors hover:bg-primary-50 ${
+                className={`w-full flex items-center gap-2 mr-3.5 px-2 py-2 rounded-xs text-body font-medium transition-colors hover:bg-primary-50 ${
                   isActive
                     ? 'bg-primary-main text-white'
                     : 'text-ink-500'
@@ -51,6 +52,13 @@ const SideNav = () => {
             );
           })}
         </div>
+      </div>
+      <div className="w-full pt-2 flex items-center gap-2 border-t-ink-200 border-t-[0.5px]">
+        <Avatar className='rounded-full border-[0.5]'>
+          <AvatarImage/>
+          <AvatarFallback>SP</AvatarFallback>
+        </Avatar>
+        <span className='text-caption font-bold'>{'Shirley Pham'}</span>
       </div>
     </div>
   );
