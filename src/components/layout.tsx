@@ -1,4 +1,4 @@
-import SideNav from './sidenav';
+import SideNav from "./commons/sidenav";
 
 type Props = {
   children?: React.ReactNode;

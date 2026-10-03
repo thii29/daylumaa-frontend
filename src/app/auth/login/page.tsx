@@ -1,7 +1,7 @@
 'use client';
-import Button from '@/components/button';
-import InputForm from '@/components/input-form';
-import Logo from '@/components/logo';
+import Button from '@/components/commons/button';
+import InputForm from '@/components/commons/input-form';
+import Logo from '@/components/commons/logo';
 
 type Props = {};
 
