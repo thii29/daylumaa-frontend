@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import 'tailwindcss';
 @import './variables.css';
 
 @theme {
   --font-sans: 'Inter', sans-serif;
+  --font-script: 'Dancing Script', cursive;
 
   /* Colors */
   /* Primary */
@@ -109,13 +111,9 @@
     font-size: var(--fs-4xl); /* 40px              */
     line-height: var(--lh-4xl); /* 48px  ← icon-xl ✦ */
   }
-}
 
-.grid-overlay {
-  background-image:
-    linear-gradient(to right, color-mix(in srgb, var(--brand-600) 8%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in srgb, var(--brand-300) 8%, transparent) 1px, transparent 1px);
-  background-size: 65px 65px;
-  -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 30%, transparent 85%);
-  mask-image: radial-gradient(ellipse at 50% 30%, black 30%, transparent 85%);
+  .text-welcome {
+    font-size: var(--fs-6xl);
+    line-height: var(--lh-5xl);
+  }
 }

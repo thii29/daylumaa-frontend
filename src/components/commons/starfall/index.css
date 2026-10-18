@@ -1,8 +1,6 @@
-@import './../../../app/globals.css';
-
 @keyframes star-fall {
   0% {
-    transform: translate3d(0, 0, 0) rotate(-45deg);
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
     opacity: 0;
   }
   10% {
@@ -12,40 +10,27 @@
     opacity: 1;
   }
   100% {
-    transform: translate3d(-60vw, 60vh, 0) rotate(-45deg);
+    transform: translate3d(0, 110vh, 0) rotate(360deg);
     opacity: 0;
   }
 }
 
 .star {
   position: absolute;
-  width: 120px;
-  height: 2px;
-  border-radius: 9999px;
+  top: 0;
+  left: var(--star-left);
+  width: var(--star-size);
+  height: var(--star-size);
+  color: #fff;
   opacity: 0;
-  /* head (left) is bright, tail (right) fades out */
-  background: linear-gradient(
-    to right,
-    color-mix(in srgb, var(--brand-500) 80%, transparent),
-    transparent
-  );
-  animation: star-fall var(--star-duration, 10s) linear var(--star-delay, 0s)
+  /* glow (like the pen's text-shadow) */
+  filter: drop-shadow(
+      0 0 10px color-mix(in srgb, var(--color-primary-200) 60%, transparent)
+    )
+    drop-shadow(0 0 18px color-mix(in srgb, var(--color-primary-100) 30%, transparent));
+  animation: star-fall var(--star-duration, 6s) linear var(--star-delay, 0s)
     infinite;
   will-change: transform, opacity;
-}
-
-/* glowing head */
-.star::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 4px;
-  height: 4px;
-  border-radius: 9999px;
-  transform: translate(-50%, -50%);
-  background: var(--brand-500);
-  box-shadow: 0 0 8px 2px color-mix(in srgb, var(--brand-400) 60%, transparent);
 }
 
 @media (prefers-reduced-motion: reduce) {

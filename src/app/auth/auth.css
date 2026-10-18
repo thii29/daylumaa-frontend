@@ -1,18 +1,17 @@
-@import './../globals.css';
 
 .grid-overlay {
   background-image:
     linear-gradient(
       to right,
-      color-mix(in srgb, var(--color-primary-main) 8%, transparent) 1px,
+      color-mix(in srgb, var(--color-ink-500) 8%, transparent) 1px,
       transparent 1px
     ),
     linear-gradient(
       to bottom,
-      color-mix(in srgb, var(--color-primary-400) 8%, transparent) 1px,
+      color-mix(in srgb, var(--color-ink-300) 8%, transparent) 1px,
       transparent 1px
     );
-  background-size: 65px 65px;
+  background-size: 80px 80px;
   -webkit-mask-image: radial-gradient(
     ellipse at 50% 30%,
     black 30%,
